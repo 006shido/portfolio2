@@ -103,16 +103,26 @@
     .btn-ghost:hover { border-color: var(--accent1); color: var(--accent1); }
     /* ── AVATAR ──────────────────────────────────────────── */
     .avatar-wrap {
-      width: 110px; height: 110px; margin: 0 auto 30px;
-      border-radius: 50%; padding: 3px;
-      background: linear-gradient(135deg, var(--accent1), var(--accent2));
-      box-shadow: 0 0 32px rgba(108,99,255,.4);
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #2ec5ff;
+    box-shadow: 0 0 30px rgba(46, 197, 255, 0.5);
     }
+
     .avatar-inner {
-      width: 100%; height: 100%; border-radius: 50%;
-      background: linear-gradient(135deg, #1a1d30, #111420);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    }
+
+    .avatar-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
     }
     /* ── SECTION SHARED ──────────────────────────────────── */
     section { padding: 96px 6%; }
@@ -272,7 +282,9 @@
     <div class="hero-content">
       <div class="badge">Open to work</div>
       <div class="avatar-wrap">
-        <div class="avatar-inner">🗿</div>
+        <div class="avatar-inner">
+  <img src="https://i.pinimg.com/736x/ae/8d/a5/ae8da5a103cb385d54801cb617e7f8ec.jpg" alt="Avatar">
+        </div>
       </div>
       <h1>Crafting digital<br><span class="grad">experiences that matter</span></h1>
       <p> Learning Full-stack development with a passion for clean code, thoughtful UI, and products that actually help people.</p>
